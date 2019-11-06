@@ -39,15 +39,34 @@
                 },
               @{@"photo" : @"img_mib",
                 @"name" : @"MIB",
-                },
+                },nil];
+    _movie2 = [[NSArray alloc] initWithObjects:
               @{@"photo" : @"img_jumaji",
                 @"name" : @"Jumanji",
                 },
-              @{@"photo" : @"img_bumblebee",
-                @"name" : @"BumbleBee",
+              @{@"photo" : @"img_kidking",
+                @"name" : @"Kid King",
                 },
               @{@"photo" : @"img_aladdin",
                 @"name" : @"Aladdin",
+                },
+              @{@"photo" : @"img_dora",
+                @"name" : @"Dora",
+                },
+              @{@"photo" : @"img_bladerunner",
+                @"name" : @"Blade Runner",
+                },
+              @{@"photo" : @"img_spiderman",
+                @"name" : @"SpiderMan",
+                },
+              @{@"photo" : @"img_life",
+                @"name" : @"Life",
+                },
+              @{@"photo" : @"img_mib",
+                @"name" : @"MIB",
+                },
+              @{@"photo" : @"img_bumblebee",
+                @"name" : @"BumbleBee",
                 },
               @{@"photo" : @"img_blackpanther",
                 @"name" : @"Black Panther",
@@ -64,12 +83,13 @@
     }
     else {
         MovieShowingCollectionViewCell *cellB = [collectionView dequeueReusableCellWithReuseIdentifier:@"showingIdentifier" forIndexPath:indexPath];
-        NSDictionary *dict = [self.movie objectAtIndex:indexPath.item];
+        NSDictionary *dict = [self.movie2 objectAtIndex:indexPath.item];
         cellB.movieShowingImage.image = [UIImage imageNamed:dict[@"photo"]];
         cellB.movieShowingText.text = dict[@"name"];
         return cellB;
     }
 }
+
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.movie.count;

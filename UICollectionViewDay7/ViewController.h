@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *movieCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *movieShowingCollectionView;
 @property (copy, readwrite) NSArray *movie;
-
+@property (copy, readwrite) NSArray *movie2;
 
 @end
 

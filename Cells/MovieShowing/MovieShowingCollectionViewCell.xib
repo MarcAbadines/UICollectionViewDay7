@@ -19,19 +19,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="171" height="173"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-pX-XGV">
-                        <rect key="frame" x="10" y="143" width="151" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-rS-io8">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="144"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="144" id="JxN-pD-tPL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-pX-XGV">
+                        <rect key="frame" x="0.0" y="146" width="171" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-rS-io8">
-                        <rect key="frame" x="0.0" y="0.0" width="171" height="137"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GLs-pX-XGV" secondAttribute="bottom" constant="5" id="6W3-cB-64A"/>
+                <constraint firstAttribute="trailing" secondItem="GLs-pX-XGV" secondAttribute="trailing" id="AMN-5A-Ikx"/>
+                <constraint firstItem="pyn-rS-io8" firstAttribute="leading" secondItem="f87-eg-fz1" secondAttribute="leading" id="WHU-eC-vs8"/>
+                <constraint firstItem="GLs-pX-XGV" firstAttribute="top" secondItem="pyn-rS-io8" secondAttribute="bottom" constant="2" id="dOx-hX-Q2s"/>
+                <constraint firstAttribute="trailing" secondItem="pyn-rS-io8" secondAttribute="trailing" id="fce-V8-pQQ"/>
+                <constraint firstItem="pyn-rS-io8" firstAttribute="top" secondItem="f87-eg-fz1" secondAttribute="top" id="lhw-Cj-8cL"/>
+                <constraint firstItem="GLs-pX-XGV" firstAttribute="leading" secondItem="f87-eg-fz1" secondAttribute="leading" id="x94-Sv-1Ux"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="kZZ-BA-PpF"/>
             <size key="customSize" width="171" height="205"/>
             <connections>
