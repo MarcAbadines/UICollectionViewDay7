@@ -15,6 +15,10 @@
 		5B67817323715CF4003F2E54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B67817223715CF4003F2E54 /* main.m */; };
 		5B67817D23715CF4003F2E54 /* UICollectionViewDay7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B67817C23715CF4003F2E54 /* UICollectionViewDay7Tests.m */; };
 		5B67818823715CF4003F2E54 /* UICollectionViewDay7UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B67818723715CF4003F2E54 /* UICollectionViewDay7UITests.m */; };
+		5B67819723715F3E003F2E54 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B67819623715F3E003F2E54 /* MovieCollectionViewCell.m */; };
+		5B67819A23715F67003F2E54 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67819923715F67003F2E54 /* MovieCollectionViewCell.xib */; };
+		5B67819C2371CBCB003F2E54 /* MovieShowingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B67819B2371CBCB003F2E54 /* MovieShowingCollectionViewCell.xib */; };
+		5B6781A42371CDA8003F2E54 /* MovieShowingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6781A32371CDA8003F2E54 /* MovieShowingCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		5B67818323715CF4003F2E54 /* UICollectionViewDay7UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewDay7UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B67818723715CF4003F2E54 /* UICollectionViewDay7UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDay7UITests.m; sourceTree = "<group>"; };
 		5B67818923715CF4003F2E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B67819523715F3E003F2E54 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		5B67819623715F3E003F2E54 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		5B67819923715F67003F2E54 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		5B67819B2371CBCB003F2E54 /* MovieShowingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieShowingCollectionViewCell.xib; sourceTree = "<group>"; };
+		5B6781A22371CDA8003F2E54 /* MovieShowingCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieShowingCollectionViewCell.h; sourceTree = "<group>"; };
+		5B6781A32371CDA8003F2E54 /* MovieShowingCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieShowingCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 		5B67815723715CF3003F2E54 = {
 			isa = PBXGroup;
 			children = (
+				5B67819823715F46003F2E54 /* Cells */,
 				5B67816223715CF3003F2E54 /* UICollectionViewDay7 */,
 				5B67817B23715CF4003F2E54 /* UICollectionViewDay7Tests */,
 				5B67818623715CF4003F2E54 /* UICollectionViewDay7UITests */,
@@ -130,6 +141,35 @@
 				5B67818923715CF4003F2E54 /* Info.plist */,
 			);
 			path = UICollectionViewDay7UITests;
+			sourceTree = "<group>";
+		};
+		5B67819823715F46003F2E54 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B6781A12371CC0D003F2E54 /* MovieShowing */,
+				5B6781A02371CBFA003F2E54 /* Movies */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5B6781A02371CBFA003F2E54 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				5B67819523715F3E003F2E54 /* MovieCollectionViewCell.h */,
+				5B67819623715F3E003F2E54 /* MovieCollectionViewCell.m */,
+				5B67819923715F67003F2E54 /* MovieCollectionViewCell.xib */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		5B6781A12371CC0D003F2E54 /* MovieShowing */ = {
+			isa = PBXGroup;
+			children = (
+				5B67819B2371CBCB003F2E54 /* MovieShowingCollectionViewCell.xib */,
+				5B6781A22371CDA8003F2E54 /* MovieShowingCollectionViewCell.h */,
+				5B6781A32371CDA8003F2E54 /* MovieShowingCollectionViewCell.m */,
+			);
+			path = MovieShowing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +278,8 @@
 				5B67817023715CF4003F2E54 /* LaunchScreen.storyboard in Resources */,
 				5B67816D23715CF4003F2E54 /* Assets.xcassets in Resources */,
 				5B67816B23715CF3003F2E54 /* Main.storyboard in Resources */,
+				5B67819C2371CBCB003F2E54 /* MovieShowingCollectionViewCell.xib in Resources */,
+				5B67819A23715F67003F2E54 /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +307,8 @@
 				5B67816823715CF3003F2E54 /* ViewController.m in Sources */,
 				5B67817323715CF4003F2E54 /* main.m in Sources */,
 				5B67816523715CF3003F2E54 /* AppDelegate.m in Sources */,
+				5B67819723715F3E003F2E54 /* MovieCollectionViewCell.m in Sources */,
+				5B6781A42371CDA8003F2E54 /* MovieShowingCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UICollectionView *movieCollectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *movieShowingCollectionView;
+@property (copy, readwrite) NSArray *movie;
 
 
 @end
