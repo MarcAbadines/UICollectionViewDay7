@@ -147,11 +147,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QfF-dV-9i7" secondAttribute="trailing" constant="30" id="1VS-Yc-a9J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QfF-dV-9i7" secondAttribute="trailing" constant="30" id="1VS-Yc-a9J">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="aJR-Nm-HQv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AOI-Ch-idw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aJR-Nm-HQv" secondAttribute="trailing" id="BM8-ZG-HAK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aJR-Nm-HQv" secondAttribute="bottom" constant="90" id="EPT-6m-0L2"/>
-                            <constraint firstItem="QfF-dV-9i7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UFs-cY-fUV"/>
+                            <constraint firstItem="QfF-dV-9i7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UFs-cY-fUV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QfF-dV-9i7" secondAttribute="bottom" constant="20" id="esc-cd-GCR"/>
                             <constraint firstItem="aJR-Nm-HQv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yFV-28-o3k"/>
                         </constraints>
