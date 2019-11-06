@@ -36,9 +36,6 @@
                 },
               @{@"photo" : @"img_life",
                 @"name" : @"Life",
-                },
-              @{@"photo" : @"img_mib",
-                @"name" : @"MIB",
                 },nil];
     _movie2 = [[NSArray alloc] initWithObjects:
               @{@"photo" : @"img_jumaji",
@@ -92,6 +89,9 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (collectionView == self.movieShowingCollectionView ) {
+        return self.movie2.count;
+    }
     return self.movie.count;
 }
 
